@@ -1,0 +1,70 @@
+\section{Vorlesung}
+
+
+\subsection{Lagemaße/Maße der zentralen Tendenz}
+\begin{tabular}{r|l|l}
+     Modus                  & Wert kommt am häufigsten vor       & ratio, intervall, ordinal, nominal\\
+     Median                 & Teilt Menge in 2 gleichgroße Teile & ratio, intervall, ordinal \\
+     arithmetisches Mittel  & Durchschnitt                       & ratio, intervall
+\end{tabular}
+
+
+\subsubsection{Median}
+\begin{tabular}{r|c|l}
+     n - ungerade &$\widetilde{x}~=~x_{\frac{n+1}{2}}$&  \\
+     {}&{}&{}\\
+     n - gerade   &$\widetilde{x}~=~\frac{x_{\frac{n}{2}}+x_{\frac{n}{2}+1}}{2}$&
+\end{tabular}\\\\
+\\ungerade:
+\begin{tabular}{cc|c|cc}
+     $x_{1}$&$x_{2}$&$x_{3}$&$x_{4}$&$x_{5}$  \\
+     3&5&6&8&12
+\end{tabular}\\
+mittlerer Wert = 6\\
+\\
+gerade :
+\begin{tabular}{cc|cc|cc}
+     $x_{1}$&$x_{2}$&$x_{3}$&$x_{4}$&$x_{5}$&$x_{6}$  \\
+     3&5&6&8&12&13
+\end{tabular}\\
+Durchschnitt der mittleren beiden Werte = 7
+
+
+\subsubsection{arithmetische Mittel}
+\begin{equation*}
+    \overline{x}=\frac{\sum_{i=1}^{n}x_{i}}{n}~~~~~\leftarrow \textrm{Datenmatrix (``normale'' Formel)}
+\end{equation*}
+  \vspace{0.5cm}
+\begin{equation*}
+     \overline{x}=\frac{\sum_{k=1}^{m}(x_{k}\cdot f_{{x}_{k}})}{n}~~~~~\leftarrow \textrm{Häufigkeitstabelle (``spezial'' Formel)}
+\end{equation*}
+
+
+\underline{Erläuterung der Gleichungen:}\\
+Um die mittlere Antwort, einen ``Durchschnitt'', zu berechnen werden zuerst alle Antworten die gegeben wurden aufsummiert und im zweiten Schritt durch die Anzahl der Antworten (n) geteilt.\\
+
+In der Datenmatrix/Urliste sind alle Antworten als $x_i$'s direkt ablesbar. Diese können einfach aufsummiert werden. Die Anzahl aller Antworten (n) kann an der ID des letzten Falls abgelesen werden (sofern keine Fälle dazwischen herausgefiltert wurden).\\
+
+In der Häufigkeitstabelle kann man die einzelnen Antworten nicht so direkt ablesen wie in der Datenmatrix. Jedoch wissen wir, dass bspw. 400 Personen Antwortausprägung 1 gegeben haben, 600 Antwortausprägung 2 usw.. Antwort 1 kommt also 500 \textit{mal} in der Datenmatrix vor, Antwort 2 600 \textit{mal} usw.. Wir rechnen also die jeweilige Antwort \textit{MAL} die Anzahl wie oft diese Antwort angegeben wurde. Die Anzahl aller Antworten (n) wird ermittelt indem die Häufigkeiten der einzelnen Antwortausprägungen addiert werden.
+
+\subsection{Dispersionsmaße/Lagemaße und Verteilungsformen}
+\textbf{Verteilungsübersicht:}\\
+\begin{tabular}{|c|c|}
+\hline
+    Modus < Median < arithmet.Mittel & linkssteil/rechtsschief
+\\ \hline
+    arithmet.Mittel < Median < Modus & rechtssteil/linksschief
+\\ \hline
+    2 Modi, Median = arithmet.Mittel, Modus weicht stark ab & bimodal
+\\ \hline
+    arithmet.Mittel,Modalwert und Median fast gleich & symetrisch\\
+  \hline
+\end{tabular}
+
+
+\subsubsection{Übung}
+\begin{enumerate}
+\item Berechne den Median für folgende Werte: 5,2,4,4,3,5,8 \solution{4}
+\item Was ist der Modus der folgenden Werte? 3,3,4,4,4,5,5,5,5,2,2,1,1,0 \solution{5}
+\item Um welche Art der Verteilung besitzt folgende Werte: arithmetisches Mittel =  24, Modus = 32, Median = 27 \solution{rechtssteil/linksschief}
+\end{enumerate}

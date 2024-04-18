@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<a:clrScheme xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+  name="JLU"><a:dk1><a:sysClr
+  val="windowText"
+  lastClr="000000"/></a:dk1><a:lt1><a:sysClr
+  val="window"
+  lastClr="FFFFFF"/></a:lt1><a:dk2><a:srgbClr
+  val="0069B3"/></a:dk2><a:lt2><a:srgbClr
+  val="DCE6EB"/></a:lt2><a:accent1><a:srgbClr
+  val="53606B"/></a:accent1><a:accent2><a:srgbClr
+  val="E7004A"/></a:accent2><a:accent3><a:srgbClr
+  val="FF9000"/></a:accent3><a:accent4><a:srgbClr
+  val="FFBE00"/></a:accent4><a:accent5><a:srgbClr
+  val="00BD67"/></a:accent5><a:accent6><a:srgbClr
+  val="4E00BB"/></a:accent6><a:hlink><a:srgbClr
+  val="0005BF"/></a:hlink><a:folHlink><a:srgbClr
+  val="7F82FF"/></a:folHlink></a:clrScheme>

@@ -1,0 +1,58 @@
+\section{Vorlesung}
+
+\subsection{Kreuztabelle/ Kontingenztafel}
+
+  \begin{itemize}
+    \item für nominale/ordinale Variablen
+    \item Konvention: Zeile-Abhängig/Spalte-unabhängig
+  \end{itemize}
+\vspace{1cm}
+Beispieltabelle(fiktional): \\
+ \begin{itemize}
+   \item [x] =~~~Studierende besuchen das Tutorium
+   \item [y] =~~~Studierende bestehen die Statistikklausur
+   \item [] Nichtantritt = nicht bestanden
+ \end{itemize}
+
+ \begin{tabular}{p{2cm}|p{2cm}|p{2cm}|p{2cm}}
+    {}              & Tutorium besucht & Tutorium nicht besucht & \textit{Gesamt}
+\\\hline
+    bestanden       & 9                & 59                     & 68
+\\\hline
+    nicht bestanden & 2                & 14                     & 16
+\\\hline
+    \textit{Gesamt} & 11               & 73                     & 84
+ \end{tabular}
+
+ \subsection{Übung}
+  \begin{enumerate}
+    \item Wie hoch ist der relative Anteil aller eingeschriebenen Studierenden die das Tutorium nicht besucht und die Klausur nicht bestanden haben?
+      \solution{$\frac{14}{84} = 16,6\%$}
+
+    \item Wie hoch ist der relative Anteil aller eingeschriebenen Studierenden die die Klausur bestanden haben?
+      \solution{$\frac{68}{84} = 80,9\%$}
+
+    \item Wie hoch ist der relative Anteil der Tutoriumsbesucher, die die Klausur bestanden haben?
+      \solution{$\frac{9}{11} = 81,8\%$}
+
+    \item Wie viel Prozent aller bestehenden Studierenden haben das Tutorium besucht?
+      \solution{$\frac{9}{68} = 13,2\%$}
+ \end{enumerate}
+\vspace{1cm}
+Ergänze folgende Kreuztabelle (\href{https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Gesundheit/Gesundheitszustand-Relevantes-Verhalten/Tabellen/liste-rauchverhalten.html#119170}{Statistisches Bundesamt 2021}):\\
+\begin{tabular}{p{2cm}|p{2cm}|p{2cm}|p{2cm}}
+   Geschlecht x Rauchen & Raucher            & Nichtraucher           & \textit{Gesamt}
+\\\hline
+   männlich             & 5059               & A                      & 22 684
+\\\hline
+   weiblich             & B                  & C                      & 23 547
+\\\hline
+   \textit{Gesamt}      & 8 738              & D                      & 46 231
+\end{tabular}
+
+\begin{enumerate}
+  \item A \solution{22684 - 5059 = 17625}
+  \item B \solution{8738  - 5059 = 3679 }
+  \item C \solution{23547 - 3679 = 19868}
+  \item D \solution{17625 + 19868= 37493}
+\end{enumerate}

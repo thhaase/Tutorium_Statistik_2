@@ -1,0 +1,30 @@
+---
+title: Lösung Vorlesung Pearsons r Übung
+---
+
+# Aufgabe 1
+
+![](scatterplot.jpg){width="1000"}
+
+# Aufgabe 2
+
+|         | $x_i$ | $y_i$ | $\bar{x}$ | $\bar{y}$ | $(x_i - \bar{x})$ | $(y_i - \bar{y})$ | $(x_i - \bar{x}) \cdot (y_i - \bar{y})$ | $(x_i - \bar{x})^2$ | $(y_i - \bar{y})^2$ |
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| A       | 0     | 2     | 6         | 4         | -6                | -2                | 12                                      | 36                  | 4                   |
+| B       | 10    | 6     | 6         | 4         | 4                 | 2                 | 8                                       | 16                  | 4                   |
+| C       | 4     | 2     | 6         | 4         | -2                | -2                | 4                                       | 4                   | 4                   |
+| D       | 8     | 4     | 6         | 4         | 2                 | 0                 | 0                                       | 4                   | 0                   |
+| E       | 8     | 6     | 6         | 4         | 2                 | 2                 | 4                                       | 4                   | 4                   |
+| **Sum** |       |       |           |           |                   |                   | 28                                      | 64                  | 16                  |
+
+$$
+r = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum (x_i - \bar{x})^2 \sum (y_i - \bar{y})^2}}
+$$
+
+$$
+= \frac{28}{\sqrt{64 \cdot 16}} = \frac{28}{\sqrt{1024}} = 0,875
+$$
+
+# Aufgabe 3
+
+Die beiden Variablen hängen stark positiv zusammen.

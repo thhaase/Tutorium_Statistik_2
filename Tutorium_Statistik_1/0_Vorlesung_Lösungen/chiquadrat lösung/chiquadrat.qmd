@@ -1,0 +1,43 @@
+---
+title: chiquadrat lösung
+---
+
+# Chi Quadrat
+$$
+\chi^2 = \sum_{i=1}^{k} \sum_{j=1}^{m} \frac{(f_{bij} - f_{eij})^2}{f_{eij}}
+$$
+$$
+= \frac{(20-103)^2}{103} + \frac{(130-47)^2}{47} + \frac{(1572-1489)^2}{1489} + \frac{(606-689)^2}{689}
+$$
+$$
+= \frac{(-83)^2}{103} + \frac{(83)^2}{47} + \frac{(83)^2}{1489} + \frac{(-83)^2}{689}
+$$
+$$
+= \frac{6889}{103} + \frac{6889}{47} + \frac{6889}{1489} + \frac{6889}{689}
+$$
+$$
+= 66,88 + 146,58 + 4,63 + 10
+$$
+$$
+= 228,09
+$$
+Im Vergleich zu n=2328 ist 228,09 nur ein kleiner Wert und schwer zu Interpretieren.
+
+# Phi
+
+$$
+\phi = \sqrt{\frac{228,09}{2328}} = 0.31
+$$
+
+Es handelt sich um einen mittelstarken Zusammenhang. Die fiktiven Personen aus den Beispieldaten können sich demnach eher mit der AFD identifizieren, wenn sie aus Ostdeutschland kommen.
+
+
+# Cramer's V
+
+Es handelt sich um eine $2\times2$ Tabelle $\Rightarrow R = 2$
+
+$$
+\text{Cramer's V} = \sqrt{\frac{\chi^2}{n \cdot (R - 1)}} = \sqrt{\frac{228,09}{2328 \cdot (2 - 1)}} = 0.31
+$$
+
+Auch durch Cramer's V Kategorien-Kontrolle zeigt sich ein mittelstarker Zusammenhang. Die fiktiven Personen aus den Beispieldaten können sich demnach eher mit der AFD identifizieren, wenn sie aus Ostdeutschland kommen.

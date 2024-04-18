@@ -1,0 +1,109 @@
+\section{Vorlesung (Zusammenhang zwischen nominal und ordinalskalierten Variablen)}
+
+\subsection{Kreuztabellen}
+Es gibt 2 Arten von Kreuztabellen:
+\begin{itemize}
+  \item [1.] Kontingenztabelle - enthält beobachtete Werte
+  \item [2.] Indifferenztabelle - enthält erwartete Werte
+\end{itemize}
+
+\subsection{Erwartete Häufigkeit}
+\begin{align*}
+  \textrm{f}_\textrm{e(ij)} = \frac{Zeilensumme \cdot Spaltensumme}{n}
+\end{align*}
+\underline{\textbf{Erklärung:}}\\
+Die Gleichung kann leicht umgestellt werden in: $\textrm{f}_\textrm{e(ij)} = Zeilensumme \cdot \frac{Spaltensumme}{n}
+$. Nun wird deutlich, dass ''Spaltensumme durch n'' ein Prozentsatz ist (äquivalent ergibt sich $Spaltensumme \cdot \frac{Zeilensumme}{n}$, was im Grunde dasselbe ist).
+
+Dieser Zeilensummenprozentsatz wird nun durch das Malrechnen auf alle Fälle der jeweiligen Spalte der Zelle angewendet. So entsteht der erwartete Wert.\\
+\\\\
+\underline{Residuen}: Differenz beobachteter und erwarteter Werte\\ je höher dieser Unterschied ist, desto eher kann man einen Zusammenhang vermuten
+
+
+\subsection{Chi-Quadrat}
+\begin{align*}
+\chi^{2}~~=~~\sum_{i=1}^{k} \sum_{j=1}^{m} \frac{(\textrm{f}_{\textrm{b}_{\textrm{ij}}} - \textrm{f}_{\textrm{e}_{\textrm{ij}}})^2}
+{\textrm{f}_{\textrm{e}_{\textrm{ij}}}}
+\end{align*}
+\underline{\textbf{Erklärung:}}\\
+Für jede Zelle werden die Abstände von beobachtetem und erwartetem Wert(Residuen) berechnet($\textrm{f}_{\textrm{b}_{\textrm{ij}}} - \textrm{f}_{\textrm{e}_{\textrm{ij}}}$). Da wir nur an den positiven Abständen interessiert sind (wie schon bei der Varianz) wird das Residuum der Zelle quadriert. Nun wird durch den erwarteten Wert geteilt,, weil wir von keinem Zusammenhang, also den erwarteten Werten ausgehen. Alles was wir bisher gerechnet haben wird für alle Zellen gerechnet und zusammengezählt. Das wird in der Gleichung damit erreicht, dass alle Spalten aufsummiert werden ($\sum_{j=1}^{m}$) und diese Ergebnisse für alle Zeilen summiert werden ($\sum_{i=1}^{k}$).
+\\
+\begin{enumerate}
+  \item $0 < \chi^2 < \infty (nicht standardisiert)$
+  \item Je größer der Wert desto größer der Zusammenhang (0: kein Zusammenhang)
+\end{enumerate}
+\vspace{0.5cm}
+\underline{\textbf{\size{20}{ABER!!!}~~~Abhängig von n und der Variablenzahl.}}
+
+
+\subsection{Normierung Chi-Quadrat mit Phi, Cramers V, C}
+
+\subsubsection{Phi}
+$\phi$ korrigiert die Abhängigkeit von n. Es ist sinvoll in die Analyse mit einzubeziehen, wenn man den Zusammenhang unabhängig von der Gesamtfallzahl interpretieren möchte.
+\begin{align*}
+  \phi =  \sqrt{\frac{\chi^2}{n}}
+\end{align*}
+\begin{itemize}
+  \item [-] $0 < \phi < 1$, wobei 0: kein Zusammenhang, 1: max. Zusammenhang
+\end{itemize}
+
+\subsubsection{Kontingenzkoeffizient C}
+$C$ korrigiert die abhängigkeit von der Variablenanzahl. Es ist mega unwichtig, wird nur selten gelehrt. Der Grund dafür ist, dass der Versuch unabhängig von der Kategorienanzahl interpretieren zu können schief geht. Die Kategorienzahl muss wieder bei der Berechnung von $C_{max}$ mit einbezogen werden.
+\begin{itemize}
+  \item [-] $0 < C < C_{\textrm{max.}}$, wobei 0: kein Zusammenhang, $C_{max}$: max. Zusammenhang
+\end{itemize}
+\begin{align*}
+  C &= \sqrt{\frac{\chi^2}{\chi^2 + n}}\\
+  C_{\textrm{max}} &= \sqrt{\frac{R-1}{R}}~~~~~~~~~~~~~~~~\textrm{;R = Minimum Zeilen-/Spaltenanzahl}
+\end{align*}
+Beispiele für R:
+\begin{itemize}
+  \item [$2\times2:$] R = 2
+  \item [$3\times4:$] R = 3
+  \item [$4\times3:$] R = 3
+\end{itemize}
+
+\subsubsection{Cramer's V}
+Cramer's V wird für den Vergleich von $\chi^2$ aus verschieden großen Kreuztabellen genutzt.
+\begin{itemize}
+  \item [-] 0 < Cramer's < 1
+\end{itemize}
+\begin{align*}
+  \textrm{Cramer's V} = \sqrt{\frac{\chi^2}{\chi^2_{\textrm{max}}}} = \sqrt{\frac{\chi^2}{n\cdot(R - 1)}} = \sqrt{\frac{\chi^2}{n\cdot(\textrm{min}(k,m)-1)}}
+\end{align*}
+
+\subsection{Interpretation Phi und Cramer's V}
+\begin{tabular}{l|l}
+  Cramer's V bzw. Phi & Interpretation \\
+\hline
+  $\leq 0,05$     & kein Zusammenhang \\
+  > 0,05 bis 0,10 & sehr schwacher Zusammenhang \\
+  > 0,10 bis 0,20 & schwacher Zusammenhang \\
+  > 0,20 bis 0,40 & mittelstarker Zusammenhang \\
+  > 0,40 bis 0,60 & starker Zusammenhang \\
+  > 0,60          & sehr starker Zusammenhang
+\end{tabular}
+\newpage
+
+\subsection{Übung}
+\begin{figure}[h!]\centering
+\begin{tabular}{p{2cm}|p{2cm}|p{2cm}|p{2cm}}
+   Geschlecht x Rauchen & Raucher            & Nichtraucher           & \textit{Gesamt}
+\\\hline
+   männlich             & 5 059              & 17 625                 & 22 684
+\\\hline
+   weiblich             & 3 679              & 19 868                 & 23 547
+\\\hline
+   \textit{Gesamt}      & 8 738              & 37 493                 & 46 231
+\end{tabular}
+\caption{Statistisches Bundesamt 2021}
+\small{\url{https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Gesundheit/Gesundheitszustand-Relevantes-Verhalten/Tabellen/liste-rauchverhalten.html#119170}}
+\label{7_raucher}
+\end{figure}
+
+\begin{enumerate}
+  \item Berechne und interpretiere $\chi^2$ für die Tabelle. \solution{336.138 Im Verhältnis zur Größe der Fallzahl ist der Wert ziemlich gering.\textrightarrow kein Zusammenhang}
+  \item Berechne und interpretiere $\phi$ \solution{$\phi$ = 0,0125~~~~~Da 0<$\phi$<1 \textrightarrow kein Zusammenhang}
+  \item Berechne C max \solution{$C = 215; C_{max} = 0.7$ Meine Werte sind sicherlich falsch. Diese kontrollieren wir gerne zusammen im Tutorium\textrightarrow kein Zusammenhang}
+  \item Berechne und interpretiere Camer's V \solution{V = 0.085 Cramers V ist sehr gering \textrightarrow kein Zusammenhang}
+\end{enumerate}

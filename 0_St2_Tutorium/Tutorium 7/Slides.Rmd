@@ -1,0 +1,148 @@
+---
+title: "Tutorium 7"
+author: "Thomas Haase"
+date: "`r Sys.Date()`"
+#output: html_document
+output: pdf_document
+---
+
+("Alle_Folien" ab S.92)
+
+# Kuckertz 144-154 lesen
+
+Welche Arten von Zusammenhängen habe ich um Hypothesen zu formulieren? Gib Beispiele an.
+
+<details>
+
+<summary>Lösung</summary>
+
+-   Unterschied und Zusammenhang
+    -   X ist mehr als Y
+    -   je mehr X desto mehr Y
+-   gerichtete und ungerichtete Hypothesen
+    -   es gibt einen Unterschied zwischen X und Y
+    -   X trägt das Merkmal mehr als Y
+-   spezifische und unspezifische Hypothesen
+    -   X hat das Merkmal 2x haüfiger als Y
+
+</details>
+
+------------------------------------------------------------------------
+
+Erkläre die Begriffe "Nullhypothese" und "Alternativhypothese". Was haben diese miteinander zu tun?
+
+<details>
+
+<summary>Lösung</summary>
+
+Nullhypothese: Bei statistischen Tests nimmt man immer an, dass kein Zusammenhang herrscht. Wenn ich testen will ob Männer öfter rauchen als Frauen gehe ich in meinem Test davon aus, dass die Gruppen sich nicht unterscheiden.
+
+Alternativhypothese: Wenn die Nullhypothese verworfen wird, geht man davon aus, dass die Alternativhypothese korrekt war. In dieser wird der Zusammenhang behauptet.
+
+</details>
+
+------------------------------------------------------------------------
+
+Bei welchen Ergebnissen verwirft man die Nullhypothese und warum?
+
+<details>
+
+<summary>Lösung</summary>
+
+Wenn der Stichproben-Mittelpunkt das Signifikanzniveau überschreitet. Mit steigendem $\bar{x}$ wird es (nach der angenommenen $H_0$) immer unwahrscheinlicher, dass die Stichprobe wirklich aus so einer angenommenen Grundgesamtheit stammen kann.
+
+</details>
+
+------------------------------------------------------------------------
+
+Was ist denn nochmal ein Signifikanzniveau?
+
+<details>
+
+<summary>Lösung</summary>
+
+Wird typischerweise bei $5\%$ oder $1\%$ angenommen. Das Signifikanzniveau stellt die von uns willkürlich gesetzte Grenze dar, ab der wir davon ausgehen, dass sich der Unterschied vom angenommenen-Nullhypothesen-Grundgesamtheitsmittelwert und dem gemessenen Stichprobenmittelwert nicht mehr durch Zufall erklärt werden kann.
+
+</details>
+
+------------------------------------------------------------------------
+
+Wie heißen die beiden statistischen Fehler? Erkläre beide.
+
+<details>
+
+<summary>Lösung</summary>
+
+$\alpha$-Fehler: Wenn man in seiner Stichprobe durch Zufall genau so gemessen hat, dass man außerhalb der Signifikanzniveaus liegt und fälschlicherweise einen Zusammenhang annimmt hat man einen $\alpha$-Fehler/Typ 1 Fehler zum Opfer gefallen.
+
+$\beta$-Fehler: Wenn in der Grundgesamtheit eigentlich ein Zusammenhang vorherrscht, aber dieser sich in der Stichprobe nicht niederschlägt und die Nullhypothese weiterhin angenommen wird, begeht man einen $beta-$Fehler/ Typ 2 Fehler.
+
+</details>
+
+------------------------------------------------------------------------
+
+Was bedeutet "Die Ergebnisse der Studie sind signifikant?"
+
+<details>
+
+<summary>Lösung</summary>
+
+Die Wahrscheinlichkeit, dass das Ergebnis zufällig entstanden ist, ist gering. Man muss immer mit einem $\alpha$-Fehler rechnen!
+
+</details>
+
+------------------------------------------------------------------------
+
+Wodurch verringert sich die Irrtumswahrscheinlichkeit?
+
+<details>
+
+<summary>Lösung</summary>
+
+-   mit größer werdender Differenz von Stichprobenmittelwert und Mittelwert der Grundgesamtheit,
+-   mit kleiner werdender Populationsstreuung und
+-   mit vergrößertem Stichprobenumfang.
+
+</details>
+
+------------------------------------------------------------------------
+
+Was ist der Unterschied zwischen dem Konfidenzintervall und den Signifikanzniveaus?
+
+<details>
+
+<summary>Lösung</summary>
+
+[kurze google recherche ergibt:](https://www.datasciencecentral.com/significance-level-vs-confidence-level-vs-confidence-interval/)
+
+> Confidence level vs Significance Level Above, I defined a confidence level as answering the question: "...if the poll/test/experiment was repeated (over and over), would the results be the same?" In essence, confidence levels deal with repeatability. Significance levels on the other hand, have nothing at all to do with repeatability. They are set in the beginning of a specific type of experiment (a "hypothesis test"), and controlled by you, the researcher. The significance level (also called the alpha level) is a term used to test a hypothesis. More specifically, it's the probability of making the wrong decision when the null hypothesis is true. In statistical speak, another way of saying this is that it's your probability of making a Type I error. Constructing Confidence Intervals with Significance Levels using the normal distribution, you can create a confidence interval for any significance level with this formula:
+
+> sample statistic ± z\*(standard error)
+
+> (z\* = multiplier)
+
+> Confidence intervals are constructed around a point estimate (like the mean) using statistical table (e.g. the z-table or t-table), which give known ranges for normally distributed data. Normally distributed data is preferable because the data tends to behave in a known way, with a certain percentage of data falling a certain distance from the mean. For example, a point estimate will fall within 1.96 standard deviations about 95% of the time.
+
+# Wiederholung
+
+(fiktive) Links-Rechts- Selbsteinschätzung einer Bevölkerung: $\bar{x} = 5,822$; $s = 2,393$; $n = 1891$, gesucht: $95\%$ Konfidenzintervall: In welchem Intervall liegt mit $95\%$ Sicherheit $\mu$?
+
+<details>
+
+<summary>Lösung</summary>
+
+$\hat{\sigma}_{x}=\sqrt{s^2 \cdot \frac{n}{n-1}}=\sqrt{2,393^2 \cdot \frac{1891}{1890}}=2,393633$
+
+$\hat{\sigma}_{\bar{x}} = \frac{\hat{\sigma}_{x}}{\sqrt{n}} = \frac{2,393633}{\sqrt{1891}} = 0,055$
+
+$$
+x_u = \bar{x} - t_{(1-\frac{\alpha}{2};n-1)} \cdot \hat{\sigma}_{\bar{x}}\\
+x_o = \bar{x} + t_{(1-\frac{\alpha}{2};n-1)} \cdot \hat{\sigma}_{\bar{x}}
+$$ $1-\frac{\alpha}{2} = 1-\frac{0,05}{2} = 0,975$
+
+$$
+x_u = 5,822 - 1,96 \cdot 0,055 = 5,7722\\
+x_o = 5,822 + 1,96 \cdot 0,055 = 5,9878
+$$ Mit einer Sicherheit von $95\%$ liegt der Mittelwert der Grundgesamtheit zwischen $5,772$ und $5,9878$
+
+</details>

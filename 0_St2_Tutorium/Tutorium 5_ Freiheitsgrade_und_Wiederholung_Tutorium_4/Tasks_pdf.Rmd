@@ -1,0 +1,69 @@
+---
+title: Tutorium 5
+author: Thomas Haase
+date: 23.05.2023
+toc: true
+output: pdf_document
+---
+
+---
+# Aufgaben von letztem Mal kurze Wiederholung
+## Aufgabe 1 (von B.P.Kleer, S.Selova, A.Lechner)
+
+**Finde für eine Normalverteilung denjenigen z-Wert, der die Verteilung (annähernd) in die folgenden Bereiche unterteilt:**
+
+(a) obere 20\%
+
+(b) obere 60\%
+
+(c) mittlere70\%
+
+(d) obere 10\%
+
+(e) obere 70\%
+
+(f) mittlere 40\%
+
+### Lösung (von Thomas)
+
+in R mit qnorm() lösbar, der Befehl "schaut" quasi in die Z-Tabelle und sucht nach dem zugehörigen Wert
+
+(a) qnorm(1 - 0.8) = qnorm(0.2) = -0.8416212
+
+(b) qnorm(1 - 0.4) = qnorm(0.6) = 0.2533471
+
+(c) obere grenze: qnorm(0.85) = 1.036433 /// untere grenze: qnorm(0.15) = -1.036433
+
+(d) qnorm(1 - 0.1) = qnorm(0.9) = 1.281552
+
+(e) qnorm(1 - 0.7) = qnorm(0.3) = -0.5244
+
+(f) $\frac{60}{2} = 30 \rightarrow$ qnorm(0.3) = -0.5244005 und daher aufgrund der symetrie an 0 außerdem: 0.5244005
+
+    
+## Aufgabe 2 (von B.P.Kleer, S.Selova, A.Lechner)
+
+**Gegeben sei eine Verteilung von IQ-Werten mit $\mu = 100$ und $\sigma = 15$. Wie groß ist die Wahrscheinlichkeit, zufällig eine Person mit einem $IQ \leq 120$ auszuwählen, wenn diese Verteilung normalverteilt ist?**
+
+### Lösung (von Thomas)
+1. Z-Wert berechnen:
+$z=\frac{x - \bar{x}}{s} = \frac{120IQ - 100IQ}{15IQ} = 1,333$
+
+2. gesucht ist $P(IQ \leq 120) \rightarrow$ Wie groß ist die Fläche unter der Normalverteilung links von $z = 1,333$? $\rightarrow$ Z-Tabelle für 1,33: 0,9082 $\rightarrow$ 90,82\%
+
+
+
+# Freiheitsgrade und n-1
+
+[\underline{LINK - Khan Academy Simulation zu n-1}](https://www.khanacademy.org/math/ap-statistics/summarizing-quantitative-data-ap/more-standard-deviation/v/simulation-providing-evidence-that-n-1-gives-us-unbiased-estimate)
+
+Die Besselkorrektur kann auch mathematisch bewiesen werden, die Beweise müssen aber nicht verstanden werden.
+
+## Kellnerbeispiel 
+
+Ein Kellner bringt 5 Getränke an einen Tisch. Beim Ausgeben des ersten Getränkes muss er in die Runde Fragen wer das Getränk bekommt. Auch beim Servieren des zweiten Getränkes muss er noch nachfragen und so weiter. Bei der letzten Person weiß der Kellner allerdings, dass sie das letzte Getränk bekommen muss, welches er noch auf seinem Tablett trägt. Das Getränk der letzten Person kann nicht mehr variieren.
+
+# t-Verteilung nutzen
+
+[\underline{LINK - Dr. B. Philipp Kleer erklärt wie die t-tabelle genutzt wird um kritische t-Werte abzulesen}](https://vimeo.com/512472262)
+

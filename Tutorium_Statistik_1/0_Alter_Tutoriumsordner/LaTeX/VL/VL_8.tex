@@ -1,0 +1,71 @@
+\section{Vorlesung}
+
+\subsection{Spearman's Rho/Rangkorrelationskoeffizient}
+Spearman's $\rho$ (Rangkorrelationskoeffizient) findet Anwendung, wenn beide Variablen ordinal, metrisch oder ordinal und metrisch skaliert sind.
+\begin{align*}
+  \rho &= 1 - \frac{6 \cdot \sum^{n}_{i=1}{d^2_i}}{n \cdot (n^2-1)}\\
+  d_i  &= R(x_i) - R(y_i)~~~\textrm{(Differenz der Rangplätze)}\\
+  &-1 < \rho < 1
+\end{align*}
+\textbf{\underline{Erklärung:}} \\
+\underline{Ursprung der Formel:} Die Formel ergibt sich (Achtung, vorgriff auf nächste Vorlesung) aus einem Spezialfall von Pearson's r. Es muss lediglich statt den wahren Werten Ränge eingesetzt werden um die Formel zu erhalten. \\
+\underline{\textbf{Herleitung:}}\hspace{15cm}\href{https://stats.stackexchange.com/questions/89121/prove-the-equivalence-of-the-following-two-formulas-for-spearman-correlation}{Quelle}
+\begin{align*}
+  \rho &= \frac{\sum_i(x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_i (x_i-\bar{x})^2 \sum_i(y_i-\bar{y})^2}} = \frac{\sum_i(x_i-\bar{x})(y_i-\bar{y})}{\sum_i (x_i-\bar{x})^2}~~~~~\textrm{weil es keine Gleichstände gibt und} x,y\in\{1,2,...,n\}\\
+  \textrm{Nenner:}&\\
+  &\sum_i (x_i-\bar{x})^2 ~~=~~ \sum_i x_i^2 - n\bar{x}^2 \\
+&= \frac{n(n + 1)(2n + 1)}{6} - n(\frac{(n + 1)}{2})^2
+~~=~~ n(n + 1)(\frac{(2n + 1)}{6} - \frac{(n + 1)}{4})\\
+&= n(n + 1)(\frac{(8n + 4-6n-6)}{24})
+~~=~~ n(n + 1)(\frac{(n -1)}{12})\\
+&= \frac{n(n^2 - 1)}{12}\\
+\textrm{Zähler:}&\\
+&\sum_i(x_i-\bar{x})(y_i-\bar{y}) ~~=~~ \sum_i x_i(y_i-\bar{y})-\sum_i\bar{x}(y_i-\bar{y})  ~~=~~ \sum_i x_i y_i-\bar{y}\sum_i x_i-\bar{x}\sum_iy_i+n\bar{x}\bar{y} \\
+&=\sum_i x_i y_i-n\bar{x}\bar{y} ~~=~~ \sum_i x_i y_i-n(\frac{n+1}{2})^2 ~~=~~ \sum_i  x_i y_i- \frac{n(n+1)}{12}3(n +1) \\
+&= \frac{n(n+1)}{12}.(-3(n +1))+\sum_i  x_i y_i ~~=~~ \frac{n(n+1)}{12}.[(n-1) - (4n+2)] + \sum_i  x_i y_i \\
+&= \frac{n(n+1)(n-1)}{12} - n(n+1)(2n+1)/6 + \sum_i  x_i y_i ~~=~~ \frac{n(n+1)(n-1)}{12} -\sum_i x_i^2+ \sum_i  x_i y_i \\
+&= \frac{n(n+1)(n-1)}{12} -\sum_i (x_i^2+ y_i^2)/2+ \sum_i  x_i y_i  ~~=~~ \frac{n(n+1)(n-1)}{12} - \sum_i (x_i^2 - 2x_i y_i + y_i^2) /2\\
+&= \frac{n(n+1)(n-1)}{12} - \sum_i(x_i - y_i)^2/2 ~~=~~ \frac{n(n^2-1)}{12} - \sum d_i^2/2\\
+\textrm{Beide Zusammenfügen:}&\\
+&= \frac{n(n+1)(n-1)/12 - \sum d_i^2/2}{n(n^2 - 1)/12} ~~=~~ {\frac {n(n^2 - 1)/12 -\sum d_i^2/2}{n(n^2 - 1)/12}} ~~=~~ 1- {\frac {6 \sum d_i^2}{n(n^2 - 1)}}
+\end{align*}
+Ich habe die Herleitung hier eingefügt um zu zeigen, dass an diesem Punkt der Vorlesung Schulmathematik vielleicht noch mit Mathe Leistungskurs zum Herleiten ausreicht, allerdings an seine Grenzen stößt. Formeln wie diese können von Nichtmathematikern allerdings durch Kontext und Anwendung versucht werden zu verstehen.\\
+\\
+\underline{\textbf{Anwendung und Beispiel(fiktiv):}}
+Wir gehen von folgender Tabelle aus:\\
+\begin{tabular}[h!]{l|cc}
+ID & Anzahl Tutoriumsbesuche & Klausurnote \\\hline
+1 & 0 & 8 \\
+2 & 3 & 9 \\
+3 & 0 & 6 \\
+4 & 1 & 5 \\
+5 & 12& 12\\
+6 & 10& 13\\
+\end{tabular}\\
+Nun werden den Werte Ränge zugewiesen, also vom kleinsten Wert bis zum größten Wert durchnummeriert. Sollte ein Wert doppelt (Im Beispiel die 0) vorkommen, wird beiden der Durchschnitt des Ranges zugeordnet. 0 hat Rang 1, weil 0 zweimal vorkommt bilden wir den Durchschnitt der Ränge. Einer Null wird also Rang 1 zugeordnet, der anderen Rang 2 und der Durchschnitt ist 1,5. Die 1,5 wird beiden zugeordnet.\\
+\begin{tabular}[h!]{l|cc}
+ID & Ränge der Anzahl Tutoriumsbesuche & Ränge der Klausurnote \\\hline
+1 & 1,5 & 3 \\
+2 & 3   & 4 \\
+3 & 1,5 & 2 \\
+4 & 2   & 1 \\
+5 & 5   & 5 \\
+6 & 4   & 6 \\
+\end{tabular}\\
+Im Anschluss wird die Differenz der Ränge ($d_i$) berechnet:\\
+\begin{tabular}[h!]{l|cc}
+ID & Ränge der Anzahl Tutoriumsbesuche & Ränge der Klausurnote & $d_i$ \\\hline
+1 & 1,5 & 3 & 1,5\\
+2 & 3   & 4 & 1  \\
+3 & 1,5 & 2 &0,5 \\
+4 & 2   & 1 & 1  \\
+5 & 5   & 5 & 0  \\
+6 & 4   & 6 & 2  \\
+\end{tabular}\\
+\begin{align*}
+\rho &= 1 - \frac{6 \cdot \sum^{n}_{i=1}{d^2_i}}{n \cdot (n^2-1)}~~~~~\textrm{Summe ausformulieren\textrightarrow Ränge einsetzen}\\
+&= 1 - \frac{6 \cdot (1,5^2 + 1^2 + 0,5^2 + 1^2 + 0^2 + 2^2)}{n \cdot (n^2-1)}~~~~~\textrm{Ränge zusammenrechnen und n einsetzen}\\
+&= 1 - \frac{6 \cdot (2,25 + 1 + 0,25 + 1 + 4)}{n \cdot (6^2-1)}~~~~~\textrm{weiter zusammenfassen}\\
+&= 1 - \frac{6 \cdot 8,5}{6 \cdot (6^2-1)}~~~~~\textrm{weiter zusammenfassen}\\
+&= 1 - \frac{51}{6 \cdot (36-1)}~~=~~1 - \frac{51}{6 \cdot 35}~~=~~1 - \frac{51}{210}~~=~~1 - 0,243 ~~=~~0,757
+\end{align*}
