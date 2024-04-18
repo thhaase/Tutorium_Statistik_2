@@ -1,10 +1,8 @@
 # Statistik 2 Tutorien 2024
 
-Hier lade ich (Thomas Haase) die Materialien meines Tutoriums zur Vorlesung [Statistik für Sozialwissenschaften II](https://studip.uni-giessen.de/dispatch.php/course/details?sem_id=668e947ef5bfb3a6dc063d02e51742d7&again=yes) 2024 von [Prof. Dr. Simone Abendschön](https://www.uni-giessen.de/de/fbz/fb03/institutefb03/ifp/Lehrende_Team/Professor_innen/abendschoen/index) hoch.
+**Das Statistik-Tutorium findet ab dem 2.5. immer Donnerstags 16 bis 18 Uhr in Raum E207 statt.**
 
-
-
-- [Meine Organisatorischen Notizen](0_Orga)
+- [Organisatorische Notizen](0_Orga)
 
 # Tutorienliste
 
