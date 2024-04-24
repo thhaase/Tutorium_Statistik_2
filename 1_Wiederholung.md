@@ -1,60 +1,43 @@
-- [Input](#input)
-  - [VL 1 Grundlegende Begriffe](#vl-1-grundlegende-begriffe)
-    - [Was ist Statistik](#was-ist-statistik)
-    - [Grundbegriffe](#grundbegriffe)
-    - [Skalenniveaus](#skalenniveaus)
-  - [VL 2 Univariate Statistik](#vl-2-univariate-statistik)
-    - [Datenmatrix/Rohdaten](#datenmatrixrohdaten)
-    - [Häufigkeiten](#häufigkeiten)
-      - [Kumulierte Häufigkeit](#kumulierte-häufigkeit)
-      - [Darstellungsarten](#darstellungsarten)
-    - [Summenzeichen](#summenzeichen)
-  - [VL 3 Univariate Statistik](#vl-3-univariate-statistik)
-    - [Lagemasse und zentrale Tendenz](#lagemasse-und-zentrale-tendenz)
-      - [Median](#median)
-      - [arithmetisches Mittel](#arithmetisches-mittel)
-    - [Dispersionsmaße/Lagemaße und Verteilungsformen](#dispersionsmaßelagemaße-und-verteilungsformen)
-  - [VL 4 Univariate Statistik](#vl-4-univariate-statistik)
-    - [Variationsweite/Spannweite/Range](#variationsweitespannweiterange)
-    - [Interquartilsabstand/IQR](#interquartilsabstandiqr)
-    - [Varianz](#varianz)
-  - [VL 5  Univariate Statistik](#vl-5--univariate-statistik)
-    - [Boxplot](#boxplot)
-      - [Ausreißer und Extremwert](#ausreißer-und-extremwert)
-      - [Variationskoeffizient V](#variationskoeffizient-v)
-    - [Z-Transformation/Z-Wert](#z-transformationz-wert)
-  - [VL 6 Bivariate Statistik](#vl-6-bivariate-statistik)
-    - [Kreuztabelle/Kontingenztafel](#kreuztabellekontingenztafel)
-  - [VL 7 Bivariate Statistik](#vl-7-bivariate-statistik)
-    - [Kreuztabellen](#kreuztabellen)
-    - [Erwartete Häufigkeit](#erwartete-häufigkeit)
-      - [Residuen](#residuen)
-    - [Chi-Quadrat](#chi-quadrat)
-    - [Normierung Chi-Quadrat mit Phi, C, Cramer's V$](#normierung-chi-quadrat-mit-phi-c-cramers-v)
-      - [Phi: $\\phi$](#phi-phi)
-      - [Kontingenzkoeffizient C](#kontingenzkoeffizient-c)
-      - [Cramer's V](#cramers-v)
-      - [Interpretationsempfehlung](#interpretationsempfehlung)
-  - [VL 8 Bivariate Statistik](#vl-8-bivariate-statistik)
-    - [Spearmans (Rho)](#spearmans-rho)
-  - [VL 9 Bivariate Statistik](#vl-9-bivariate-statistik)
-    - [PRE Maße](#pre-maße)
-      - [Beispiel Lambda:](#beispiel-lambda)
-      - [Eta-Quadrat](#eta-quadrat)
-    - [Korrelation](#korrelation)
-      - [Kovarianz](#kovarianz)
-      - [Pearson's r](#pearsons-r)
-  - [VL 10](#vl-10)
-    - [Normalverteilung](#normalverteilung)
-    - [Standardnormalverteilung](#standardnormalverteilung)
-    - [Gesetz der großen Zahlen](#gesetz-der-großen-zahlen)
-    - [Zentrales Grenzwerttheorem](#zentrales-grenzwerttheorem)
-      - [Hinführung: Fläche unter der Kurve](#hinführung-fläche-unter-der-kurve)
-    - [Z-Tabelle](#z-tabelle)
-  - [Links des Z-Wertes $-1,28$ befinden sich circa $10%$ der Fläche unter der Normalverteilung.](#links-des-z-wertes--128-befinden-sich-circa-10-der-fläche-unter-der-normalverteilung)
-      - [Rohwert \<=\> Z-Wert](#rohwert--z-wert)
-- [Aufgaben](#aufgaben)
-  - [VL 1 und 2](#vl-1-und-2)
+- [VL 1 Grundlegende Begriffe](#vl-1-grundlegende-begriffe)
+  - [Was ist Statistik](#was-ist-statistik)
+  - [Grundbegriffe](#grundbegriffe)
+  - [Skalenniveaus](#skalenniveaus)
+- [VL 2 Univariate Statistik](#vl-2-univariate-statistik)
+  - [Datenmatrix/Rohdaten](#datenmatrixrohdaten)
+  - [Häufigkeiten](#häufigkeiten)
+  - [Summenzeichen](#summenzeichen)
+- [VL 3 Univariate Statistik](#vl-3-univariate-statistik)
+  - [Lagemasse und zentrale Tendenz](#lagemasse-und-zentrale-tendenz)
+  - [Dispersionsmaße/Lagemaße und Verteilungsformen](#dispersionsmaßelagemaße-und-verteilungsformen)
+- [VL 4 Univariate Statistik](#vl-4-univariate-statistik)
+  - [Variationsweite/Spannweite/Range](#variationsweitespannweiterange)
+  - [Interquartilsabstand/IQR](#interquartilsabstandiqr)
+  - [Varianz](#varianz)
+- [VL 5  Univariate Statistik](#vl-5--univariate-statistik)
+  - [Boxplot](#boxplot)
+  - [Z-Transformation/Z-Wert](#z-transformationz-wert)
+- [VL 6 Bivariate Statistik](#vl-6-bivariate-statistik)
+  - [Kreuztabelle/Kontingenztafel](#kreuztabellekontingenztafel)
+- [VL 7 Bivariate Statistik](#vl-7-bivariate-statistik)
+  - [Kreuztabellen](#kreuztabellen)
+  - [Erwartete Häufigkeit](#erwartete-häufigkeit)
+  - [Chi-Quadrat](#chi-quadrat)
+  - [Normierung Chi-Quadrat mit Phi, C, Cramer's V$](#normierung-chi-quadrat-mit-phi-c-cramers-v)
+- [VL 8 Bivariate Statistik](#vl-8-bivariate-statistik)
+  - [Spearmans (Rho)](#spearmans-rho)
+- [VL 9 Bivariate Statistik](#vl-9-bivariate-statistik)
+  - [PRE Maße](#pre-maße)
+  - [Korrelation](#korrelation)
+- [VL 10](#vl-10)
+  - [Normalverteilung](#normalverteilung)
+  - [Standardnormalverteilung](#standardnormalverteilung)
+  - [Gesetz der großen Zahlen](#gesetz-der-großen-zahlen)
+  - [Zentrales Grenzwerttheorem](#zentrales-grenzwerttheorem)
+  - [Z-Tabelle](#z-tabelle)
+
+![**Inhaltsverzeichnis Aufgaben**]{
+  - [VL 1](#vl-1)
+  - [VL 2](#vl-2)
   - [VL 3](#vl-3)
   - [VL 4](#vl-4)
   - [VL 5](#vl-5)
@@ -63,6 +46,9 @@
   - [VL 8](#vl-8)
   - [VL 9](#vl-9)
   - [VL 10](#vl-10-1)
+}
+
+---
 
 # Input
 ## VL 1 Grundlegende Begriffe
@@ -605,11 +591,11 @@ Wozu? Wir wissen, dass sich eine unabhängig und identisch verteilte Stichprobe 
 ### Z-Tabelle
 In der Z-Tabelle ist die Fläche in Prozent eingetragen, die links vom an den Achsen zu findenden Z-Wert liegt. 
 Links des Z-Wertes $-1,28$ befinden sich circa $10\%$ der Fläche unter der Normalverteilung.
----
+
 ![](1_normaldistribution.png|77)
 ![](1_Z-Tabelle.png|80)
 
-#### Rohwert <=> Z-Wert
+#### Rohwert und Z-Wert umrechnen
 Um Aussagen über bestimmte Variablen zu treffen müssen wir zwischen Rohwerten und Z-Werten übersetzen können.
 
 - $z = \frac{x - \mu}{\sigma}$
@@ -659,7 +645,7 @@ Um Aussagen über bestimmte Variablen zu treffen müssen wir zwischen Rohwerten 
 
 # Aufgaben
 > 💡Lösungen können per Klick auf das Dreieck eingeblendet werden
-## VL 1 und 2
+## VL 1
 Gib das Skalenniveau der folgenden Variable an: 
 ![Selbstvertrauen: niedrig, mittel, hoch]{Ordinal <br> geordnet, Abstände nicht quantifiziert (können unterschiedlich sein)}
 ![Einkommen]{Ratio <br> geordnete konstante Abstände, Nullpunkt ist natürlich}
@@ -669,7 +655,8 @@ Sind die folgende Variablen diskret oder stetig?
 ![Exakte Zeit eines 100m Läufers]{Stetig <br> kann immer weiter verfeinert werden}
 ![Anzahl der Kinder]{Diskret <br>(es gibt keine halben Kinder)}
 
----
+
+## VL 2
 
 politisches Interesse Allbus:   
 | Kategorie                     | $Hx_k$ | $hx_k$ |$hx_k\cdot100$| kumulierte prozentuale Häufigkeit |
