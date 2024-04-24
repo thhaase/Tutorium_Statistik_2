@@ -1006,8 +1006,11 @@ Körpergröße (in cm) mit $\mathcal{N}(175, 5)$
 $$\text{x} = \mu \pm z \cdot \sigma^2$$
 
 Wir wollen die Mittleren 95% wissen und möchten daher restlichen 5% auf die beiden Enden der Glockenkurve aufteilen:
+$$\frac{0,05}{2}=0,025$$
+Auf beiden Seiten _schneiden_ wir also $2,5\%$ der Fläche ab. 
 
-$1-\frac{0,05}{2}=0,975$
+Um die Grenzen zu finden, die die mittleren 95% von den Randbereichen trennen berechnen wir:
+$$1-0,025=0,975$$ 
 
 0,975 in Z-Tabelle suchen $\Rightarrow$ Z-Wert: 1,96
 
@@ -1019,3 +1022,18 @@ $1-\frac{0,05}{2}=0,975$
 184,8cm
 }
 
+---
+
+![Wie groß ist die Fläche einer Normalverteilung links des Z-Wertes -1?]{In der Z-Tabelle den Z-Wert -1 suchen ergibt: 0.1587}
+
+
+![Wie groß ist bei einer Normalverteilung der Flächenanteil
+zwischen den Werten $z=-2$ und $z=2$?]{
+Vorgehen: Die Fläche links von $z=2$ minus die Fläche links von $z=-2$
+
+In der Z-Tabelle nachschauen:
+- $z_{-2} = 0.0228$
+- $z_2 = 0.9772$
+$$0.9772 - 0.0228 = 0,9544$$
+Der Flächenanteil beträgt $0,9544$ oder auch $95,44\%$.
+}
