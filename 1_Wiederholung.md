@@ -329,8 +329,6 @@ $$\rho = 1 - \frac{6 \cdot \sum^{n}_{i=1}{d^2_i}}{n \cdot (n^2-1)}$$
 $$d_i  = R(x_i) - R(y_i)~~~\textrm{(Differenz der Rangplätze)}$$
 - $-1 < \rho < 1$
 
-> [Link zu den Tutoriumsfolien (mit Beispiel)](1_spearmans_rho_slides.html)
-
 ## VL 9 Bivariate Statistik
 ### PRE Maße 
 
