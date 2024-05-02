@@ -3,6 +3,7 @@
 **Das Statistik-Tutorium findet ab dem 2.5. immer Donnerstags 16 bis 18 Uhr in Raum E207 statt.**
 
 - [Organisatorische Notizen](0_Orga.md)
+- [Statistik 1](https://thhaase.github.io/Tutorium_Wiederholung_Statistik_1/)
 
 # Tutorienliste
 
