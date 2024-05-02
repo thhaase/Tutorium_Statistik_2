@@ -83,7 +83,7 @@
 
 
 ### Skalenniveaus
-![](1_diagram.jpg|70)
+![](./media/1_diagram.jpg|70)
 ![mermaid code]{
 graph TD;
     A[Kategorial] --> B[Nominal]
@@ -221,7 +221,7 @@ Man schreibt wiefolgt:
 ## VL 5  Univariate Statistik
 
 ### Boxplot
-![](1_Boxplot.png|80)  
+![](./media/1_Boxplot.png|80)  
 
 #### Ausreißer und Extremwert
 - Ausreißer: $1,5\cdot \text{IQR}$ über 3./unter 1. Quartil
@@ -566,7 +566,7 @@ $$\mathcal{N}(\mu, \sigma^2)$$
   - 1 = 1 Standardabweichung über 0
   - -2 = 2 Standardabweichungen unter 0
 $$\mathcal{N}(0, 1)$$ 
-![](1_Standardnormalverteilung.png|80)
+![](./media/1_Standardnormalverteilung.png|80)
 
 ### Gesetz der großen Zahlen
 > Je größer die Stichprobe ist, desto geringer wird der Standardfehler ($\sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}$) 
@@ -578,10 +578,10 @@ Es liegt eine [unabhängige und identisch verteilte Zufallsvariable](https://de.
 **$\Rightarrow$ Aussagen über Grundgesamtheit nur über Stichproben möglich!!**
 
 
-![](1_man.png|80)
+![](./media/1_man.png|80)
 
 #### Hinführung: Fläche unter der Kurve
-![](1_animation.gif)
+![](./media/1_animation.gif)
 In der Animation wird pro Zeitschritt der Wert mit der nächsten ID generiert. Auf der rechten Seite werden die Antworten (nur ganze Zahlen zwischen 1 und 15) diskret dargestellt. Wenn wir nun wissen möchten wie viele Personen Antwort 8 gegeben haben reicht es die gestapelten "Blöcke" des Balkendiagrams zu zählen. Wenn wir wissen möchten wie viele Personen eine Antwort zwischen 5 und 9 gegeben haben müssen wie alle Blöcke zwischen 5 und 9 zählen. 
 
 
@@ -593,8 +593,8 @@ Wozu? Wir wissen, dass sich eine unabhängig und identisch verteilte Stichprobe 
 In der Z-Tabelle ist die Fläche in Prozent eingetragen, die links vom an den Achsen zu findenden Z-Wert liegt. 
 Links des Z-Wertes $-1,28$ befinden sich circa $10\%$ der Fläche unter der Normalverteilung.
 
-![](1_normaldistribution.png|77)
-![](1_Z-Tabelle.png|80)
+![](./media/1_normaldistribution.png|77)
+![](./media/1_Z-Tabelle.png|80)
 
 #### Rohwert und Z-Wert umrechnen
 Um Aussagen über bestimmte Variablen zu treffen müssen wir zwischen Rohwerten und Z-Werten übersetzen können.
@@ -693,12 +693,12 @@ politisches Interesse Allbus:
 ![Welche Aussagen können über eine Verteilung mit den folgenden Werten getroffen werden? arithmetisches Mittel = 24; Modus = 32; Median = 27]{rechtssteil/linksschief}
 
 ## VL 4
-![](1_IQR_1.png|80)
+![](./media/1_IQR_1.png|80)
 
 ![Ordne die IQRs der Verteilungen nach ihrer Größe]{$IQR_A < IQR_B < IQR_C$<br><br>![](1_IQR_2.png)}
 
 
-![](1_Zeugnis.png|80)
+![](./media/1_Zeugnis.png|80)
 ![Was ist meine Durchschnittsnote im Fach Deutsch?]{$\frac{10+9+9+9}{4}=9,25$}
 ![Wie hoch ist die Standardabweichung meiner Noten im Fach Deutsch?]{**Varianz:**<br>$\frac{(10 - 9,25)^2 + (9 - 9,25)^2 + (9 - 9,25)^2 + (9 - 9,25)^2}{4} = \frac{(0,75)^2 + (-0,25)^2 + (-0,25)^2 + (-0,25)^2}{4}$<br>$= \frac{0,5625 + 0,0625 + 0,0625 + 0,0625}{4} = \frac{0,75}{4}$<br>$= 0,1875$<br>**Standardabweichung:**<br>$\sqrt{0,1875} = 0,433$}
 ![Ohne zu rechnen: Liegt der Median meiner Physiknote höher oder tiefer als der Mittelwert? Warum?]{Der Median ist niedriger, weil die 13 Punkte als "Ausreißer" den Mittelwert mit nach oben ziehen. In Verteilungen mit wenigen hohen Werten bevorzugt man deshalb den Median um die "Lage der Verteilung" zu beschreiben.}
@@ -742,7 +742,7 @@ Gegeben sind eine Obstschüssel voller Äpfel und eine Obstschüssel voller Birn
 }
 ![**Lösung 2**]{
   (Der Grüne Punkt markiert die 0, die Standardabweichung ist nicht eingetragen)
-  ![](1_Strahl1.png|90)
+  ![](./media/1_Strahl1.png|90)
 }
 ![**Lösung 3**]{
 | Apfel-ID | Z-Apfel | Birnen-ID | Z-Birnen |
@@ -754,7 +754,7 @@ Gegeben sind eine Obstschüssel voller Äpfel und eine Obstschüssel voller Birn
 | 5        | 0,13    | 5         | -0,96    |
 }
 ![**Lösung 4**]{
-  ![](1_Strahl2.png|90)
+  ![](./media/1_Strahl2.png|90)
 }
   ![**Lösung 5**]{
   - Apfel Nummer 1 ist die Frucht, die am weitesten über dem Durchschnitt liegt, da der Z-Wert am höchsten positiv ist.

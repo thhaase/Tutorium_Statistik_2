@@ -31,11 +31,11 @@ Es liegt eine [unabhängige und identisch verteilte Zufallsvariable](https://de.
 
 **$\Rightarrow$ Aussagen über Grundgesamtheit nur über Stichproben möglich!!**
 
-![](1_man.png|90)
+![](./media/1_man.png|90)
 
 
 ### Hinführung: Fläche unter der Kurve
-![](1_animation.gif|90)
+![](./media/1_animation.gif|90)
 In der Animation wird pro Zeitschritt der Wert mit der nächsten ID generiert. Auf der rechten Seite werden die Antworten (nur ganze Zahlen zwischen 1 und 15) diskret dargestellt. Wenn wir nun wissen möchten wie viele Personen Antwort 8 gegeben haben reicht es die gestapelten "Blöcke" des Balkendiagrams zu zählen. Wenn wir wissen möchten wie viele Personen eine Antwort zwischen 5 und 9 gegeben haben müssen wie alle Blöcke zwischen 5 und 9 zählen. 
 
 
@@ -48,8 +48,8 @@ Wozu? Wir wissen, dass sich eine unabhängig und identisch verteilte Stichprobe 
 In der Z-Tabelle ist die Fläche in Prozent eingetragen, die links vom an den Achsen zu findenden Z-Wert liegt. 
 Links des Z-Wertes $-1,28$ befinden sich circa $10\%$ der Fläche unter der Normalverteilung.
 
-![](1_normaldistribution.png|80)
-![](1_Z-Tabelle.png|80)
+![](./media/1_normaldistribution.png|80)
+![](./media/1_Z-Tabelle.png|80)
 
 ### Rohwert und Z-Wert umrechnen
 Um Aussagen über bestimmte Variablen zu treffen müssen wir zwischen Rohwerten und Z-Werten übersetzen können.
