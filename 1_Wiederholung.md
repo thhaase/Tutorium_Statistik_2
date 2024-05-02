@@ -1,3 +1,6 @@
+
+> Eine Version mit mehr Übungsaufgaben und velinkten Tutoriumsfolien ist [hier](https://thhaase.github.io/Tutorium_Wiederholung_Statistik_1/) zu finden
+
 - [VL 1 Grundlegende Begriffe](#vl-1-grundlegende-begriffe)
   - [Was ist Statistik](#was-ist-statistik)
   - [Grundbegriffe](#grundbegriffe)
