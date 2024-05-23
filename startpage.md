@@ -10,9 +10,9 @@
 | Nr.  | Datum  | Tutoriumsmaterialien                                                    |
 | ---- | ------ | ------------------------------------------------------------------------|
 | 1    | 25.04. | [Wiederholung Statistik 1](1_Wiederholung.md)                           |
-| 2    | 02.05. | [Standardfehler / Freiheitsgrade](2_Standardfehler.md)   |
-| 3    | 16.05. | [t-Verteilung/Konfidenzintervall und Testlogik](3_Konfidenzintervall.md)                           |
-| 4    | 23.05. | z-Test                                                                  |
+| 2    | 02.05. | [Standardfehler / Freiheitsgrade](2_Standardfehler.md)                  |
+| 3    | 16.05. | [t-Verteilung/Konfidenzintervall](3_Konfidenzintervall.md)              |
+| 4    | 23.05. | [Testlogik und z-Test](4_Testlogik_z_test.md)                           |
 | 5    | 06.06. | t-Test                                                                  |
 | 6    | 13.06. | t-Test                                                                  |
 | 7    | 20.06. | $\chi^2$-Test                                                           |

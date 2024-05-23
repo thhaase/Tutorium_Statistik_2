@@ -96,6 +96,6 @@ $\Rightarrow$ damit dann
 - ![Was sind unabhängige und identisch verteilte Zufallsvariablen?]{Alle Werte besitzen dieselbe Wahrscheinlichkeitsverteilung, haben also alle dieselben Chancen gleiche Werte anzunehmen und beeinflussen sich nicht.}
 - ![Was besagt das Zentrale Grenzwerttheorem?]{Mit steigendem n nähert sich die Verteilung von n Stichprobenmittelwerten aus der GG einer unabhängige und identisch verteilte Zufallsvariable einer Normalverteilung an.}
 - ![Wie verändert sich die Varianz, wenn $n$ ansteigt?]{$$\sigma^2=\frac{\sum (x_i - \bar{x})}{n} \xRightarrow[]{n\uparrow} \sigma^2=\frac{\sum (x_i - \frac{\sum x_i}{\uparrow})}{\uparrow} =\frac{\sum (x_i - \downarrow)}{\uparrow} =\frac{\sum (x_i)}{\uparrow} =\downarrow$$ Lässt sich auch durch das Gesetz der großen Zahlen herleiten!}
-- ![Welcher Mittelwert ist ein besserer Schätzer für die Grundgesamtheit? [$\bar{x}_A = 12; \sigma_A = 3; n_A = 36$] [$\bar{x}_B = 20; \sigma_B = 5; n_B = 81$]] {$$\sigma_{\bar{X}_A} = \frac{3}{\sqrt{36}} = 0,5$$ $$\sigma_{\bar{X}_B} = \frac{5}{\sqrt{81}} = 0,55$$ $$\sigma_{\bar{X}_A} < \sigma_{\bar{X}_B}$$ Stichprobe A ist präziser als Stichprobe B $Rightarrow$ 
+- ![Welcher Mittelwert ist ein besserer Schätzer für die Grundgesamtheit? [$\bar{x}_A = 12; \sigma_A = 3; n_A = 36$] [$\bar{x}_B = 20; \sigma_B = 5; n_B = 81$]] {$$\sigma_{\bar{X}_A} = \frac{3}{\sqrt{36}} = 0,5$$ $$\sigma_{\bar{X}_B} = \frac{5}{\sqrt{81}} = 0,55$$ $$\sigma_{\bar{X}_A} < \sigma_{\bar{X}_B}$$ Stichprobe A ist präziser als Stichprobe B
 
 }
