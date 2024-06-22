@@ -13,11 +13,11 @@
 | 2    | 02.05. | [Standardfehler / Freiheitsgrade](2_Standardfehler.md)                  |
 | 3    | 16.05. | [t-Verteilung/Konfidenzintervall](3_Konfidenzintervall.md)              |
 | 4    | 23.05. | [Testlogik und z-Test](4_Testlogik_z_test.md)                           |
-| 5    | 06.06. | [t-Test](5_t_test.md)                                                                  |
-| 6    | 13.06. | [t-Test](6_t_test.md)                                                                  |
-| 7    | 20.06. | $\chi^2$-Test                                                           |
-| 8    | 27.06. | $\chi^2$-Test; t-Test Vergleich + Wiederholung                          |
-| 9    | 04.06. | -                                                                       |
+| 5    | 06.06. | [t-Test](5_t_test.md)                                                   |
+| 6    | 13.06. | [t-Test](6_t_test.md)                                                   |
+| 7    | 20.06. | [t-Test, Tests evaluieren](7_t_test_evaluation.md)                      |
+| 8    | 27.06. | $\chi^2$-Test                                                           |
+| 9    | 04.06. | $\chi^2$-Test; t-Test Vergleich + Wiederholung                          |
 | 10   | 11.06. | -                                                                       |
 | 11   | 18.06. | Wiederholung vor Klausur                                                |
 
