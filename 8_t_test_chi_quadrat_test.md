@@ -259,4 +259,70 @@ Gibt es einen Unterschied zwischen den beiden Gruppen?
 
 ## t-test gepaart
 
-## $\chi^2$ test
+**Frage:**
+
+Gibt es einen Unterschied zwischen den gebundenen Gruppen?
+
+| #                  | Differenzen der Stichproben | 
+|--------------------|-----------------------------|
+| n                  | 15                          | 
+| Mittelwert         | 3                           | 
+| Standardabweichung | 5                           | 
+
+![Lösung]{
+
+**1. Hypothesen**
+- $H_0: \mu_1 - \mu_2 = 0    \Rightarrow \mu_1 = \mu_2$
+- $H_1: \mu_1 - \mu_2 \neq 0 \Rightarrow \mu_1 \neq \mu_2$
+
+**2. Ablehnungsbereich**
+- $1 - \frac{\alpha}{2} = 1 - \frac{0.05}{2} = 1 - 0.025 = 0.975$
+- $\nu = 2 \cdot n - 2 = 2 \cdot 15 - 2 = 28$
+- $t_{28,0.975} = 2.048$
+- $t_{\text{krit}} = \pm 2.048$
+
+**3. Prüfgröße bestimmen**
+- $t_{emp} = \frac{\bar{x_{d}}}{\hat{\sigma}_{\bar{x_{d}}}} = \frac{\bar{x_{d}}}{\hat{\sigma}_{d}/\sqrt{n}} = \frac{3}{5/\sqrt{15}} = 1.55$
+
+**4. Interpretation**
+- $-2.048 < 1.55 < 2.048$
+- Die Nullhypothese wird nicht abgelehnt $\Rightarrow$ Es gibt keinen statistisch signifikanten Unterschied zwischen den Gruppen. Der Unterschied von 3 Einheiten zwischen den Gruppen ist nicht statistisch signifikant.
+
+}
+
+
+
+## $\chi^2$ Anpassungstest
+
+Entspricht die beobachtete Verteilung der Variable X der erwarteten theoretischen Verteilung.
+
+
+| #           | $x_1$ | $x_2$ | $x_3$ |
+|-------------|-------|-------|-------|
+| beobachtet  | 20     |  14    | 7     |
+
+![Lösung]{
+
+**Hypothesen**
+- $H_0: X_{beobachtet} = X_{erwartet}$
+- $H_1: X_{beobachtet} \neq X_{erwartet}$
+
+**Ablehnungsbereich**
+- $1 - \alpha = 1 - 0.05 = 0.95$
+- $\nu = k - 1 = 3 - 1 = 2$
+- $\chi^2_{\text{krit}} = 7.81$
+
+**Prüfgröße bestimmen**
+- $\chi^2_{emp} = \sum_i^k \frac{(f_{b_i} - f_{e_i})^2}{f_{e_i}} = \frac{(20 - 7)^2}{7} + \frac{(14 - 7)^2}{7} + \frac{(7 - 7)^2}{7} = \frac{(13)^2}{7} + \frac{(7)^2}{7} + \frac{(0)^2}{7} = \frac{169}{7} + \frac{49}{7} + \frac{0}{7} = \frac{218}{7} \approx 31.14$
+
+**Interpretation**
+- $31.14 > 7.81$
+- Die Nullhypothese wird abgelehnt $\Rightarrow$ Die beobachtete Verteilung entspricht nicht der erwarteten Verteilung.
+
+}
+
+
+
+## $\chi^2$
+
+
