@@ -7,17 +7,17 @@
 
 # Tutorienliste
 
-| Nr.  | Datum  | Tutoriumsmaterialien                                                    |
-| ---- | ------ | ------------------------------------------------------------------------|
-| 1    | 25.04. | [Wiederholung Statistik 1](1_Wiederholung.md)                           |
-| 2    | 02.05. | [Standardfehler / Freiheitsgrade](2_Standardfehler.md)                  |
-| 3    | 16.05. | [t-Verteilung/Konfidenzintervall](3_Konfidenzintervall.md)              |
-| 4    | 23.05. | [Testlogik und z-Test](4_Testlogik_z_test.md)                           |
-| 5    | 06.06. | [t-Test](5_t_test.md)                                                   |
-| 6    | 13.06. | [t-Test](6_t_test.md)                                                   |
-| 7    | 20.06. | [p-wert, statistische Fehler](7_t_test_evaluation.md)                   |
-| 8    | 27.06. | [$t-Test, \chi^2$-Test](8_t_test_chi_quadrat_test.md)                   |
-| 9    | 04.06. | $\chi^2$-Test; t-Test Vergleich + Wiederholung                          |
-| 10   | 11.06. | -                                                                       |
-| 11   | 18.06. | Wiederholung vor Klausur                                                |
+| Nr.  | Tutoriumsmaterialien                                                    |
+| ---- | ------------------------------------------------------------------------|
+| 1    | [Wiederholung Statistik 1](1_Wiederholung.md)                           |
+| 2    | [Standardfehler / Freiheitsgrade](2_Standardfehler.md)                  |
+| 3    | [t-Verteilung/Konfidenzintervall](3_Konfidenzintervall.md)              |
+| 4    | [Testlogik und z-Test](4_Testlogik_z_test.md)                           |
+| 5    | [t-Test](5_t_test.md)                                                   |
+| 6    | [t-Test](6_t_test.md)                                                   |
+| 7    | [p-wert, statistische Fehler](7_t_test_evaluation.md)                   |
+| 8    | [Überblick Tests](8_t_test_chi_quadrat_test.md)                         |
+| 9    | -                                                                       |
+| 10   | -                                                                       |
+| 11   | Wiederholung vor Klausur                                                |
 
